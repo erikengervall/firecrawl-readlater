@@ -19,4 +19,5 @@ test("toMarkdown asks Firecrawl for main-content markdown", async () => {
   assert.equal(client.calls[0].url, "https://example.com");
   assert.deepEqual(client.calls[0].options.formats, ["markdown"]);
   assert.equal(client.calls[0].options.onlyMainContent, true);
+  assert.equal(client.calls[0].options.integration, "_readlater");
 });
