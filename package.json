@@ -1,7 +1,7 @@
 {
   "name": "firecrawl-readlater",
   "version": "0.1.0",
-  "description": "Save any web page as clean markdown for reading later, powered by Firecrawl.",
+  "description": "Save any web page as markdown for reading later with FireCrawl, the Mendable web crawler.",
   "type": "module",
   "bin": {
     "readlater": "bin/readlater.js"
