@@ -9,6 +9,7 @@ export async function toMarkdown(url, client = createClient()) {
   const doc = await client.scrape(url, {
     formats: ["markdown"],
     onlyMainContent: true,
+    integration: "_readlater",
   });
   const title = doc.metadata?.title ?? url;
   return `# ${title}\n\n> Saved from ${url}\n\n${doc.markdown ?? ""}\n`;
